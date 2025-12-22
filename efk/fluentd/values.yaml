@@ -382,9 +382,17 @@ fileConfigs:
         port 9200
         path ""
         user elastic
-        password bi9O4o5lBPfzGLw1
-        # Don't wait for elastic to start up.
-        verify_es_version_at_startup false
+        password xhzrzUyKsrJHd8gA
+        verify_es_version_at_startup true
+        buffer_chunk_limit 2M
+        buffer_queue_limit 32
+        logstash_format true
+        logstash_prefix fluentd
+        scheme https
+        ssl_verify false
+        suppress_type_name true
+        include_timestamp true
+        reconnect_on_error true
       </match>
     </label>
 
