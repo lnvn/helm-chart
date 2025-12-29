@@ -23,7 +23,7 @@ roles:
   - transform
 
 replicas: 1
-minimumMasterNodes: 1
+minimumMasterNodes: 0
 
 esMajorVersion: ""
 
@@ -48,6 +48,8 @@ esJvmOptions: {}
 extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
+  # - name: discovery.type
+  #   value: single-node
 
 # Allows you to load environment variables from kubernetes secret or config map
 envFrom: []
